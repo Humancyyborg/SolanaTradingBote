@@ -6,8 +6,6 @@ This bot supports various platforms, including Raydium (V4/CPMM), Pumpfun, Moons
 
 It comes with two examples: one demonstrating HTTP request usage and another showcasing the speed and efficiency of Solana Tracker's Data Streams via Websockets.
 
-![Screenshot of the Trading Bot](https://i.gyazo.com/afb12f6c358385f133fa4b95dba3c095.png)
-
 ## Features
 
 - Enables automated trading of Solana tokens.
