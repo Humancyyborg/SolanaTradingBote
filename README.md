@@ -1,21 +1,22 @@
-# Solana Trading Bot
+# Solana Trade Bot
 
-A high-performance, automated trading bot for Solana tokens using the Solana Tracker API.
-Supports Raydium (V4/CPMM), Pumpfun, Moonshot, Orca and Jupiter.
+An advanced, automated trading bot designed for Solana tokens, leveraging the Solana Tracker API.
 
-Includes two examples, one using HTTP requests and one using the more efficient and faster Data Streams (Websockets) from Solana Tracker.
+This bot supports various platforms, including Raydium (V4/CPMM), Pumpfun, Moonshot, Orca, and Jupiter, offering versatile trading opportunities.
+
+It comes with two examples: one demonstrating HTTP request usage and another showcasing the speed and efficiency of Solana Tracker's Data Streams via Websockets.
 
 ![Screenshot of the Trading Bot](https://i.gyazo.com/afb12f6c358385f133fa4b95dba3c095.png)
 
 ## Features
 
-- Automated buying and selling of Solana tokens
-- Multi-token support
-- Configurable trading parameters (liquidity, market cap, risk score)
-- Real-time position monitoring and management
-- Parallel execution of buying and selling operations
-- Detailed logging with timestamps and color-coded actions
-- Persistent storage of positions and transaction history
+- Enables automated trading of Solana tokens.
+- Supports multiple tokens seamlessly.
+- Offers customizable trading parameters, including liquidity, market cap, and risk score.
+- Provides real-time monitoring and management of trading positions.
+- Executes buy and sell operations concurrently for enhanced efficiency.
+- Features detailed, timestamped logs with color-coded action highlights.
+- Ensures persistent storage for tracking positions and transaction history.
 
 ## Prerequisites
 
@@ -27,12 +28,14 @@ Includes two examples, one using HTTP requests and one using the more efficient 
 ## Installation
 
 1. Clone the repository:
+
 ```bash
-git clone https://github.com/YZYLAB/solana-trading-bot.git
-cd solana-trading-bot
+git clone https://github.com/axioris/SolanaTradingBot.git
+cd SolanaTradingBot
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
@@ -55,23 +58,23 @@ node websocket.js
 
 ## Configuration
 
-Adjust the settings in your `.env` file to customize the bot's behavior:
+To tailor the bot's functionality, update the .env file with the following settings:
 
-- AMOUNT: The amount of SOL to swap in each transaction
-- DELAY: Delay between buying cycles (in milliseconds)
-- MONITOR_INTERVAL: Interval for monitoring positions (in milliseconds)
-- SLIPPAGE: Maximum allowed slippage (in percentage)
-- PRIORITY_FEE: Priority fee for transactions
-- JITO: Set to "true" to use Jito for transaction processing
-- RPC_URL: Your Solana RPC URL
-- API_KEY: Your Solana Tracker - [Data API Key](https://www.solanatracker.io/data-api)
-- PRIVATE_KEY: Your wallet's private key
-- MIN_LIQUIDITY / MAX_LIQUIDITY: Liquidity range for token selection
-- MIN_MARKET_CAP / MAX_MARKET_CAP: Market cap range for token selection
-- MIN_RISK_SCORE / MAX_RISK_SCORE: Risk score range for token selection
-- REQUIRE_SOCIAL_DATA: Set to "true" to only trade tokens with social data
-- MAX_NEGATIVE_PNL / MAX_POSITIVE_PNL: PnL thresholds for selling positions
-- MARKETS: Comma-separated list of markets to trade on
+- AMOUNT: Specify the SOL amount to swap per transaction.
+- DELAY: Define the delay between buying cycles (in milliseconds).
+- MONITOR_INTERVAL: Set the frequency for position monitoring (in milliseconds).
+- SLIPPAGE: Determine the maximum acceptable slippage percentage.
+- PRIORITY_FEE: Adjust the priority fee for transactions.
+- JITO: Toggle "true" to enable Jito for transaction optimization.
+- RPC_URL: Provide your Solana RPC endpoint URL.
+- API_KEY: Input your Solana Tracker Data API Key.
+- PRIVATE_KEY: Enter your wallet's private key securely.
+- MIN_LIQUIDITY / MAX_LIQUIDITY: Define the liquidity range for token selection.
+- MIN_MARKET_CAP / MAX_MARKET_CAP: Specify the market cap range for eligible tokens.
+- MIN_RISK_SCORE / MAX_RISK_SCORE: Set the acceptable risk score range for tokens.
+- REQUIRE_SOCIAL_DATA: Use "true" to limit trading to tokens with social data availability.
+- MAX_NEGATIVE_PNL / MAX_POSITIVE_PNL: Establish PnL thresholds for triggering sales.
+- MARKETS: List the targeted markets as a comma-separated value (e.g., Raydium, Orca, Jupiter).
 
 ## API Usage and Fees
 
@@ -79,9 +82,9 @@ This bot uses the Solana Tracker API. Please refer to [Solana Tracker's document
 
 ## Disclaimer
 
-This bot is for educational purposes only. Use at your own risk. Always understand the code you're running and the potential financial implications of automated trading.
+This bot is intended strictly for educational purposes. Use it at your own risk, and ensure you fully understand the code you are running as well as the financial implications of engaging in automated trading.
 
-The goal of this project is to show the potential ways of using the Solana Tracker API.
+The primary objective of this project is to demonstrate the potential applications of the Solana Tracker API in creating automated trading solutions.
 
 ## License
 
@@ -89,8 +92,16 @@ The goal of this project is to show the potential ways of using the Solana Track
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/YZYLAB/solana-trading-bot/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/axioris/SolanaTradingBot/issues).
 
 ## Support
 
 If you find this project helpful, please consider giving it a ⭐️ on GitHub!
+If you have any further questions or need assistance, feel free to reach out to me anytime!
+<p align="left">
+  <a href="mailto:dane.foster.collins@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/dane-foster-11a177341/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://x.com/danefoster0"><img src="https://img.shields.io/badge/X-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="X" /></a>
+  <a href="https://t.me/danefoster"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" /></a>
+  <a href="https://discord.com/users/354781324558467073"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+</p>
